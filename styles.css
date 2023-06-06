@@ -232,4 +232,6 @@ video{
 
 .greeting {
     text-align: center  ;
+    font-family: "Baskerville Old Face", Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
