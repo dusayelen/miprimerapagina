@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Mi Primer Website</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="container-nav">
+            <nav class="navbar" role="navigation">
+                <a href="index.html" class="brand">Mi página web</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mas sobre mi.html">Más sobre mi</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+        </div>
+
+        <div>   
+            <h1>Contacto</h1>
+                <p class="contacto"><strong>¡Contáctanos para cualquier consulta o solicitud de información!</strong></p>
+            <form id="myForm">
+            <label for="email"><strong>Correo electrónico:</strong></label>
+            <input class="email" type="email" id="email" name="email" required>
+            <button class="submit" type="submit">Enviar</button>
+             </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

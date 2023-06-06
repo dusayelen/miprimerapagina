@@ -1,0 +1,232 @@
+
+/*paleta de colores:  #590d22 - #800f2f - #a4133c- #c9184a - #ff4d6d - #ff758f - #ff8fa3 - #ffb3c1 - #ffccd5 - #fff0f3  */
+
+
+body{
+    /* background-color: pink; */
+    background: rgb(255,192,203);
+    background: radial-gradient(circle, rgba(255,192,203,1) 21%, rgba(254,135,156,0.93) 100%);
+    color: #c9184a/*rgb(247, 12, 176) establece el color de fondo del cuerpo de la página web*/;
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1 { font-family:"Ink Free";
+        font-size: 50px;
+        text-align: center; 
+        width: 100%;
+    }
+        
+h2 { font-family:"Ink Free";
+    font-size: 36px;
+    text-align: center;
+    margin: 1px 50px 1px 50px;
+}
+
+p {
+font-family:"Baskerville Old Face", Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+/*establece el tipo de letra a utilizar en el titulo h1*/ ;
+font-size: 20px;
+padding: 10px;
+margin: 10px 30px 5px 30px; }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.button {color: #fff0f3;
+    background-color: pink;
+    border-color: #c9184a;
+    font-family:"Ink Free";
+    font-size: 25px;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+}
+
+.button2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    font-family:"Baskerville Old Face", Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+}
+
+.contacto {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email {
+    color: #c9184a;
+    border-color: #c9184a;
+    background-color: rgb(250, 195, 205);
+}
+
+.submit {
+    color: #c9184a;
+    border-color: pink;
+    background-color: #ffb3c1;
+}
+
+input[type="email" i] {
+    margin: 1px 5px 1px 5px;
+}
+
+.submit {
+    background-color: pink;
+}
+
+
+/* Esto que sigue es para la configuración de la barra navegadora */
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #ff758f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+li>a {
+    padding: 8px 24px;
+}
+
+li {
+    list-style-type: none; 
+    /*con esto desaparece los puntitos de la lista (viñeta)*/
+}
+
+a {
+    color: #fff0f3;
+    text-decoration: none;
+    font-family: "Ink Free";
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.button-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius: 50px; /*  esto es para que al achivar la ventana el boton de Menu tenga bordes rendondeados */
+        padding: 0 24px;
+        font-family: "Ink Free";
+        font-weight: bold; /*negrita*/
+        font-size: 20px;
+        color: #c9184a;
+    }
+
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: #c9184a;
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap: 70px;
+        font-size: 40px;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+}
+
+/*a partir de aqui es para configurar el flexbox de las imagenes incertadas en Mas de mi*/
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+    align-items: stretch;
+    column-gap: 10px;
+}
+
+.img1 {
+    height: 300px;
+    width: 300px;
+}
+
+
+/*configuracion del video*/
+
+video{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 1px;
+    margin: auto;
+}
+
